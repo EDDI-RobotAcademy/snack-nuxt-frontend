@@ -5,7 +5,6 @@
 .nitro
 .cache
 dist
-.DS_Store *
 
 # Node dependencies
 node_modules
@@ -24,4 +23,6 @@ logs
 .env.*
 !.env.example
 
-.DS_Store
+# 환경폴더 통째로 제외
+environment/*
+!environment/.env.example

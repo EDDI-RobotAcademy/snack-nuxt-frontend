@@ -1,0 +1,60 @@
+/* ✅ 전체 화면에서 중앙 정렬 */
+.login-wrapper {
+  display: flex;
+  justify-content: center; /* ⬅️ 수평 중앙 정렬 */
+  align-items: center; /* ⬆️ 수직 중앙 정렬 */
+  height: 100vh; /* 전체 높이 */
+}
+
+/* ✅ 로그인 컨테이너 */
+.login-container {
+  background: white;
+  padding: 24px;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ 공통 버튼 스타일 */
+.custom-btn {
+  width: 100%;
+  max-width: 280px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* ✅ 돌아가기 버튼 스타일 */
+.back-text {
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.back-text:hover {
+  color: #333;
+}
+
+/* ✅ '돌아가기'를 중앙 정렬 */
+.bottom-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
