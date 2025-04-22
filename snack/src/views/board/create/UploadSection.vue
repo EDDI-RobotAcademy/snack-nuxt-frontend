@@ -132,7 +132,7 @@ const submitBoard = async () => {
     alert('게시글이 등록되었습니다.')
     router.push('/board/all')
   } catch (error) {
-    alert('게시글 등록에 실패했습니다.')
+    alert('유지보수 중입니다.잠시만 기다려주세요.')
     console.error('❌ 게시글 등록 실패:', error)
   } finally {
     loading.value = false

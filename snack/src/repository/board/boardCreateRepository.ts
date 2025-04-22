@@ -44,7 +44,7 @@ export const boardCreateRepository = {
       })
       return res.data
     } catch (error: any) {
-      console.error('❌ 게시글 생성 실패:', error.response?.data || error.message)
+      console.error('❌ 유지보수 중 입니다 잠시만 기다려주세요', error.response?.data || error.message)
       throw error
     }
   },

@@ -7,7 +7,7 @@
         class="w-full mb-4 p-2 border border-gray-300 rounded"
       />
   
-      <h2 class="text-xl font-bold mb-4">맛집 목록 ({{ restaurantStore.restaurants.length }})</h2>
+      <h2 class="text-xl font-bold mb-4">맛집 목록 </h2>
   
       <div v-for="r in restaurantStore.restaurants" :key="r.id" class="mb-4 flex items-start gap-3">
         <div class="flex-1">
