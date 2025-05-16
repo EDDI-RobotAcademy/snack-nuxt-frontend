@@ -57,9 +57,7 @@
         hide-details
         clearable
         density="comfortable"
-        variant="solo"
-        rounded
-        class="search-input"
+        class="restaurant-input"
         :loading="loadingRestaurants"
         @update:search-input="onSearchRestaurant"
       />
@@ -218,5 +216,20 @@ onMounted(() => {
 .btn.grey.small {
   font-size: 13px;
   padding: 6px 12px;
+}
+
+.restaurant-input .v-field {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  padding-left: 0 !important;
+}
+
+.restaurant-input .v-input__control {
+  padding: 0 !important;
+}
+
+.restaurant-input input {
+  font-size: 14px;
 }
 </style>

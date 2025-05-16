@@ -58,10 +58,9 @@
         hide-details
         clearable
         density="comfortable"
-        variant="solo"
-        rounded
-        class="search-input"
+        class="restaurant-input"
         :loading="loadingRestaurants"
+        :menu-props="{ offsetY: true }"
         @update:search-input="onSearchRestaurant"
       />
     </div>
@@ -69,7 +68,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import HungllDatePicker from '@/common/components/HungllDatePicker.vue'
 import { uploadImageToS3 } from '@/common/utils/awsS3Instance'
 import type { useBoardCreateStore } from '@/store/board/boardCreateStore'
@@ -144,6 +143,8 @@ onMounted(() => {
 .input-wrapper {
   margin-bottom: 16px;
   flex: 1;
+  justify-content: center;
+  text-align: center;
 }
 
 .input-label {
@@ -270,14 +271,24 @@ onMounted(() => {
     width: 100%;
   }
 }
-.input-wrapper {
-  justify-content: center;
-  text-align: center;
-}
 
 .thumbnail-box,
 .image-preview {
   margin: 0 auto;
 }
 
+.restaurant-input .v-field {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  padding-left: 0 !important;
+}
+
+.restaurant-input .v-input__control {
+  padding: 0 !important;
+}
+
+.restaurant-input input {
+  font-size: 14px;
+}
 </style>
